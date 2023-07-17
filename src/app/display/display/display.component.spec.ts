@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DisplayComponent } from './display.component';
+import { DisplayLhsComponent } from '../display-lhs/display-lhs.component';
+import { DisplayRhsComponent } from '../display-rhs/display-rhs.component';
 
 describe('DisplayComponent', () => {
   let component: DisplayComponent;
@@ -8,7 +10,11 @@ describe('DisplayComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DisplayComponent]
+      declarations: [
+        DisplayComponent,
+        DisplayLhsComponent,
+        DisplayRhsComponent
+      ]
     });
     fixture = TestBed.createComponent(DisplayComponent);
     component = fixture.componentInstance;
