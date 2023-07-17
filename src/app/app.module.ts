@@ -9,13 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, HeaderModule, DisplayModule, HttpClientModule, MatIconModule, BrowserAnimationsModule
+    BrowserModule, HeaderModule, DisplayModule, HttpClientModule, MatIconModule, BrowserAnimationsModule, MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

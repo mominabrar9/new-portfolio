@@ -1,33 +1,37 @@
 <div class="flex items-center justify-center columns-3 gap-3 sm:gap-6">
     <div>
-        <mat-icon class="social-icons text-[#f44236]" svgIcon="gmail"></mat-icon>
+        <mat-icon class="social-icons text-[#f44236] hover:cursor-pointer" svgIcon="gmail"></mat-icon>
     </div>
 
     <div>
-        <mat-icon class="social-icons" svgIcon="github"></mat-icon>
+        <a href="https://github.com/mominabrar9" target="_blank">
+            <mat-icon class="social-icons" matTooltip="Go to my github" svgIcon="github"></mat-icon>
+        </a>
     </div>
 
     <div>
-        <mat-icon class="social-icons text-[#0078b7]" svgIcon="linkedin"></mat-icon>
+        <a href="https://www.linkedin.com/in/abrar-momin-447850136/" target="_blank">
+            <mat-icon class="social-icons text-[#0078b7]" matTooltip="Go to my linkedin" svgIcon="linkedin"></mat-icon>
+        </a>
     </div>
 </div>
 
 <div class="bg-[#222222] sm:self-end flex items-center justify-center h-1/2 sm:h-4/5 aspect-square sm:aspect-video drop-shadow-xl 
-            transition ease-in-out delay-150 hover:-translate-x-7">
+            transition ease-in-out delay-150 hover:-translate-x-7 hover:cursor-pointer" (click)="refreshPage()">
 
     <span class="sm:text-4xl text-[#ffffff] subpixel-antialiased font-medium">A.</span>
 </div>
 
 <div class="text-[#222222] h-4/5 columns-3 sm:text-xl gap-3 sm:gap-8 flex items-center">
-    <div>
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
         <span>Experience</span>
     </div>
 
-    <div>
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
         <span>Skill-stack</span>
     </div>
 
-    <div>
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
         <span>Resume</span>
     </div>
 
