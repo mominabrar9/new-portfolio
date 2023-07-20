@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tabs } from 'src/tabs';
 
 @Component({
   selector: 'app-display',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./display.component.scss']
 })
 export class DisplayComponent {
+
+  @Input()
+  selectedTab: Tabs = Tabs.e;
 
 }
