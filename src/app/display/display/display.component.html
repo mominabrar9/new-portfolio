@@ -1,13 +1,19 @@
 <!-- left half display -->
-<div class="bg-img bg-slate-300 w-full sm:h-full">
+<div class="bg-slate-300 w-[30%] sm:h-full">
     <app-display-lhs class="flex h-full w-full grid grid-rows-2"></app-display-lhs>
 </div>
 
+
+<div class="bg-img flex justify-end w-[20%] bg-slate-300 sm:h-full">
+    <div class="pic-div h-full w-[55%]">
+
+    </div>
+</div>
 
 
 <!-- right half display -->
 
 <!-- #222222 - is the dark -->
-<div class="bg-[#222222] w-full sm:h-full">
-    <app-display-rhs class="flex h-full w-full"></app-display-rhs>
+<div class="bg-[#222222] w-[50%] sm:h-full">
+    <app-display-rhs class="flex h-full w-full" [selectedTab]="selectedTab"></app-display-rhs>
 </div>

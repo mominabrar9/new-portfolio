@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tabs } from 'src/tabs';
 
 @Component({
   selector: 'app-display-rhs',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class DisplayRhsComponent {
 
+  @Input()
+  selectedTab: Tabs = Tabs.e;
+
+  tabs = Tabs;
 }

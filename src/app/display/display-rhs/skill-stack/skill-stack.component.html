@@ -1,0 +1,12 @@
+<div *ngFor="let tech of techList"
+    class="columns-1 w-full h-full border-2 border-slate-300">
+
+    <div class=" flex justify-center w-full">
+        <mat-icon class="tech-icons" [style.color]="tech.color" [svgIcon]="tech.name"></mat-icon>
+    </div>
+
+    <div class="flex justify-center w-full">
+        <span>{{tech.title}}</span>
+    </div>
+
+</div>

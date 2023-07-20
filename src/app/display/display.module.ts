@@ -4,12 +4,16 @@ import { DisplayComponent } from './display/display.component';
 import { MatIconModule } from '@angular/material/icon';
 import { DisplayLhsComponent } from './display-lhs/display-lhs.component';
 import { DisplayRhsComponent } from './display-rhs/display-rhs.component';
+import { SkillStackComponent } from './display-rhs/skill-stack/skill-stack.component';
+import { ExperienceComponent } from './display-rhs/experience/experience.component';
 
 @NgModule({
   declarations: [
     DisplayComponent,
     DisplayLhsComponent,
-    DisplayRhsComponent
+    DisplayRhsComponent,
+    SkillStackComponent,
+    ExperienceComponent
   ],
   imports: [
     CommonModule,

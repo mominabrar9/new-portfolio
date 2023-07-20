@@ -16,23 +16,30 @@
     </div>
 </div>
 
+
+
 <div class="bg-[#222222] sm:self-end flex items-center justify-center h-1/2 sm:h-4/5 aspect-square sm:aspect-video drop-shadow-xl 
             transition ease-in-out delay-150 hover:-translate-x-7 hover:cursor-pointer" (click)="refreshPage()">
 
     <span class="sm:text-4xl text-[#ffffff] subpixel-antialiased font-medium">A.</span>
 </div>
 
-<div class="text-[#222222] h-4/5 columns-3 sm:text-xl gap-3 sm:gap-8 flex items-center">
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
+
+
+<div class="text-[#222222] h-4/5 columns-3 sm:text-xl gap-3 sm:gap-10 flex items-center">
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-110': selectedTab == 'e'}" (click)="selectedTab = tabs.e">
+
         <span>Experience</span>
     </div>
 
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-110': selectedTab == 'p'}" (click)="selectedTab = tabs.p">
+        <span>Projects</span>
+    </div>
+
+    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-110': selectedTab == 's'}" (click)="selectedTab = tabs.s">
         <span>Skill-stack</span>
     </div>
-
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out">
-        <span>Resume</span>
-    </div>
-
 </div>

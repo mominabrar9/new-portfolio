@@ -1,6 +1,24 @@
 .bg-img {
-    background-image: url(/assets/better-remove-bg-lhs.png);
-    background-size: 28%;
+    background-image: url(/assets/better-cropped-remove-bg.png);
+    background-size: 65%;
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom left;
+
+    @media (min-width: 650px) {
+        background-size: 75%;
+    }
+
+    @media (min-width: 1400px) {
+        background-size: 70%;
+    }
+}
+
+
+.pic-div {
+    border-left-width: 10vw;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-width: 90vh;
+    border-bottom-style: solid;
+    border-bottom-color: #222222;
 }
