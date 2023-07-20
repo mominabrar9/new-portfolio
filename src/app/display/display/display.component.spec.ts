@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DisplayComponent } from './display.component';
 import { DisplayLhsComponent } from '../display-lhs/display-lhs.component';
 import { DisplayRhsComponent } from '../display-rhs/display-rhs.component';
+import { ExperienceComponent } from '../display-rhs/experience/experience.component';
 
 describe('DisplayComponent', () => {
   let component: DisplayComponent;
@@ -13,7 +14,8 @@ describe('DisplayComponent', () => {
       declarations: [
         DisplayComponent,
         DisplayLhsComponent,
-        DisplayRhsComponent
+        DisplayRhsComponent,
+        ExperienceComponent
       ]
     });
     fixture = TestBed.createComponent(DisplayComponent);
