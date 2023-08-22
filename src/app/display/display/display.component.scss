@@ -18,7 +18,11 @@
     border-left-width: 10vw;
     border-left-style: solid;
     border-left-color: transparent;
-    border-bottom-width: 90vh;
+    border-bottom-width: 82vh;
     border-bottom-style: solid;
     border-bottom-color: #222222;
+
+    @media (min-width: 650px) {
+        border-bottom-width: 90vh;
+    }
 }
