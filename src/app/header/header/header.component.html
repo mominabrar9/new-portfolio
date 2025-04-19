@@ -1,6 +1,7 @@
 <div class="flex items-center justify-center columns-3 gap-3 sm:gap-6">
     <div>
-        <mat-icon class="social-icons text-[#f44236] hover:cursor-pointer" svgIcon="gmail"></mat-icon>
+        <mat-icon class="social-icons text-[#f44236] hover:cursor-pointer" matTooltip="mominabrar9@gmail.com"
+            svgIcon="gmail" (click)="copyEmail()"></mat-icon>
     </div>
 
     <div>
@@ -27,19 +28,18 @@
 
 
 <div class="text-[#222222] h-4/5 columns-3 sm:text-xl gap-3 sm:gap-10 flex items-center">
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
-        [ngClass]="{ 'scale-110': selectedTab == 'e'}" (click)="selectedTab = tabs.e">
-
+    <div class="hover:cursor-pointer transition hover:scale-105 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-105 border-b-2 border-gray-800 text-gray-800 font-medium': selectedTab == 'e'}" (click)="selectedTab = tabs.e">
         <span>Experience</span>
     </div>
 
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
-        [ngClass]="{ 'scale-110': selectedTab == 'p'}" (click)="selectedTab = tabs.p">
+    <div class="hover:cursor-pointer transition hover:scale-105 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-105 border-b-2 border-gray-800 text-gray-800 font-medium': selectedTab == 'p'}" (click)="selectedTab = tabs.p">
         <span>Projects</span>
     </div>
 
-    <div class="hover:cursor-pointer transition hover:scale-110 delay-150 ease-in-out"
-        [ngClass]="{ 'scale-110': selectedTab == 's'}" (click)="selectedTab = tabs.s">
+    <div class="hover:cursor-pointer transition hover:scale-105 delay-150 ease-in-out"
+        [ngClass]="{ 'scale-105 border-b-2 border-gray-800 text-gray-800 font-medium': selectedTab == 's'}" (click)="selectedTab = tabs.s">
         <span>Skill-stack</span>
     </div>
 </div>

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { EmitterSubjectService } from 'src/services/emitter-subject.service';
 
@@ -8,13 +9,7 @@ import { EmitterSubjectService } from 'src/services/emitter-subject.service';
 })
 export class HomeComponent {
 
-  visitorCount: number = 0;
+  constructor(private emitterSubject: EmitterSubjectService, private http: HttpClient) {
 
-  constructor(private emitterSubject: EmitterSubjectService) {
-
-    this.emitterSubject.data$.subscribe(data => {
-      this.visitorCount = Number(data);
-
-    });
   }
 }

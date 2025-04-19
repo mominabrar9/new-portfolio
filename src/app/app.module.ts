@@ -14,6 +14,8 @@ import { TrackingService } from 'src/services/tracking.service';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ClipboardModule } from 'ngx-clipboard';
+import { ToastrModule } from 'ngx-toastr';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route for the homepage
@@ -25,7 +27,18 @@ const routes: Routes = [
     HomeComponent
   ],
   imports: [
-    RouterModule.forRoot(routes), DragDropModule, BrowserModule, HeaderModule, DisplayModule, HttpClientModule, MatIconModule, BrowserAnimationsModule, MatTooltipModule
+    RouterModule.forRoot(routes),
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
+    ClipboardModule,
+    DragDropModule,
+    BrowserModule,
+    HeaderModule,
+    DisplayModule,
+    HttpClientModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [TrackingService],
   bootstrap: [AppComponent]

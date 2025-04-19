@@ -23,6 +23,8 @@
     "@mdi/angular-material": "^7.2.96",
     "@mdi/font": "^7.2.96",
     "angular-material-icons": "^0.7.1",
+    "ngx-clipboard": "^16.0.0",
+    "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
