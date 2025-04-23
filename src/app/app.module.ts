@@ -10,7 +10,6 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { TrackingService } from 'src/services/tracking.service';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -40,7 +39,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatTooltipModule
   ],
-  providers: [TrackingService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 
