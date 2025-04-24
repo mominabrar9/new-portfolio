@@ -6,6 +6,8 @@ import { DisplayLhsComponent } from './display-lhs/display-lhs.component';
 import { DisplayRhsComponent } from './display-rhs/display-rhs.component';
 import { SkillStackComponent } from './display-rhs/skill-stack/skill-stack.component';
 import { ExperienceComponent } from './display-rhs/experience/experience.component';
+import {MatCardModule} from '@angular/material/card';
+import { CardComponent } from '../shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,13 @@ import { ExperienceComponent } from './display-rhs/experience/experience.compone
     DisplayLhsComponent,
     DisplayRhsComponent,
     SkillStackComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   exports: [
     DisplayComponent
