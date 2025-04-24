@@ -8,6 +8,7 @@ import { SkillStackComponent } from './display-rhs/skill-stack/skill-stack.compo
 import { ExperienceComponent } from './display-rhs/experience/experience.component';
 import {MatCardModule} from '@angular/material/card';
 import { CardComponent } from '../shared/card/card.component';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardComponent } from '../shared/card/card.component';
   imports: [
     CommonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule
   ],
   exports: [
     DisplayComponent

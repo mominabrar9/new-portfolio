@@ -8,4 +8,15 @@ import resumeData from 'src/assets/resume/resume_abrar.json';
 })
 export class ExperienceComponent {
   resumeData = resumeData;
+
+  getTechStack(projects: any[]): string[] {
+    const techStackSet = new Set<string>();
+
+    projects.forEach((project) => {
+      project.techStack.forEach((tech: string) => {
+        techStackSet.add(tech);
+      });
+    });
+    return Array.from(techStackSet);
+  }
 }

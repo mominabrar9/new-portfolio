@@ -10,7 +10,7 @@ import { Tabs } from 'src/tabs';
 })
 export class HeaderComponent {
 
-  selectedTab: Tabs = Tabs.s;
+  selectedTab: Tabs = Tabs.e;
   tabs = Tabs;
 
   constructor(

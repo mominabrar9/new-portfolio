@@ -1,8 +1,19 @@
 <div class="flex justify-start flex-col w-full gap-6 p-6 overflow-y-auto max-h-[90vh]">
     <app-card *ngFor="let exp of resumeData.experience" [header]="exp.role" [footer]="'Check projects'">
+
         <div>
-            {{exp.company}} ({{exp.duration}}) <br><br>
-            {{exp.responsibilities}}
+            <a [href]="exp.website" target="_blank" class="hover:underline text-l">
+                {{exp.company}}
+            </a>
+            ({{exp.duration}}) <br><br>
+
+            {{exp.responsibilities}} <br><br>
+
+            <mat-chip-set>
+                <mat-chip *ngFor="let tech of getTechStack(exp.projects)">
+                    {{tech}}
+                </mat-chip>
+            </mat-chip-set>
         </div>
     </app-card>
 </div>
