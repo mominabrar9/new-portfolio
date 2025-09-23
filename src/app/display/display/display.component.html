@@ -1,17 +1,7 @@
 <!-- left half display -->
 <div class="bg-slate-300 col-span-8 sm:col-span-3 h-min sm:h-full">
-    <app-display-lhs class="w-full grid grid-rows-2"></app-display-lhs>
+    <app-display-lhs class="w-full h-full flex flex-col justify-around"></app-display-lhs>
 
-    <div class="w-full flex justify-center">
-        <button class="download-button mx-4 bg-blue-500 hover:bg-blue-600 flex" (click)="downloadFile('.docx')">
-            <span class="self-center">Resume Doc</span>
-            <mat-icon class="material-symbols-outlined text-white ml-2">download</mat-icon>
-        </button>
-        <button class="download-button mx-4 bg-red-600 hover:bg-red-700 flex" (click)="downloadFile('.pdf')">
-            <span class="self-center">Resume Pdf</span>
-            <mat-icon class="material-symbols-outlined text-white ml-2">download</mat-icon>
-        </button>
-    </div>
 </div>
 
 
@@ -21,7 +11,6 @@
 
     </div>
 </div>
-
 
 
 

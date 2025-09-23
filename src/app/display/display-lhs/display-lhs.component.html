@@ -1,28 +1,36 @@
-<div class="grid grid-rows-3 h-min px-6">
+<div class="w-full flex flex-col items-center px-6">
     <div class="flex justify-center h-min items-center">
-        <span class="text-2xl sm:text-4xl text-center">Hi,</span>
+        <span class="intro-header text-center mb-[12px]">Hi,</span>
     </div>
 
     <div class="flex justify-center items-center">
-        <span class="text-2xl sm:text-4xl text-center">my name is Abrar and I'm a Software developer</span>
-    </div>
-
-    <div class="flex justify-center items-center">
-        <!-- <span class="text-2xl text-center">Lorem epsum is a message</span> -->
+        <p class="intro-header text-center">my name is Abrar and I'm a Software developer</p>
     </div>
 </div>
 
 
 
-
-<div class="h-[100%] flex items-center self-end px-6">
-    <div>
-        <p class="text-sm sm:text-lg">A seasoned Full-Stack Developer with 6+ years of experience, I am proficient in
+<div class="w-full flex items-center px-6">
+    <div class="intro-detail text-center">
+        <p>A seasoned Full-Stack Developer with 6+ years of experience, I am proficient in
             crafting innovative web applications. I excel in leveraging modern JavaScript frameworks such as Angular and
             TypeScript to build dynamic and user-centric front-end interfaces. </p>
 
-        <p class="text-sm sm:text-lg">My backend development skills encompass Node.js for server-side scripting and
+        <p>My backend development skills encompass Node.js for server-side scripting and
             Java-based frameworks like Spring Boot for robust and scalable applications.
         </p>
     </div>
+</div>
+
+
+
+<div class="w-full flex justify-center px-6">
+    <button class="download-button mx-4 bg-blue-500 hover:bg-blue-600 flex" (click)="downloadFile('.docx')">
+        <span class="self-center">Resume Doc</span>
+        <mat-icon class="material-symbols-outlined text-white ml-2">download</mat-icon>
+    </button>
+    <button class="download-button mx-4 bg-red-600 hover:bg-red-700 flex" (click)="downloadFile('.pdf')">
+        <span class="self-center">Resume Pdf</span>
+        <mat-icon class="material-symbols-outlined text-white ml-2">download</mat-icon>
+    </button>
 </div>
