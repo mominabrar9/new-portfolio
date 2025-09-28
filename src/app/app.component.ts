@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmitterSubjectService } from 'src/services/emitter-subject.service';
+import { EmitterSubjectService } from 'src/services/emitter-service/emitter-subject.service';
 
 @Component({
   selector: 'app-root',

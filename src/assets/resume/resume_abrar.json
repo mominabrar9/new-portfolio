@@ -7,7 +7,7 @@
     "website": "https://www.royalcyber.com/",
     "responsibilities": [
       "Working as a Full-stack developer on HCL WCS Commerce.",
-      "Maintaining the front-end legacy code and developing new functionalities for the Angular application in the WCS system.",
+      "Maintaining the front-end legacy code and developing new functionalities for the Angular 14 application in the WCS system.",
       "Maintaining and enhancing Java backend applications, while also developing new applications using modern Java frameworks like Spring Boot."
     ],
     "projects": [
@@ -19,7 +19,7 @@
       {
         "name": "Building microservices for WCS",
         "description": "Developing new microservice APIs to modernise and extend the capabilities of the existing WebSphere commerce application. Maintaining and debugging legacy Java and JSP applications, including identifying and resolving issues within the codebase.",
-        "techStack": ["Java", "Spring Boot", "Spring Data JPA", "DB2", "Microservices"]
+        "techStack": ["Java 11", "Spring Boot", "Spring Data JPA", "DB2", "Microservices"]
       }
     ]
   },
@@ -31,16 +31,16 @@
     "website": "https://www.maxxton.com/",
     "responsibilities": [
       "Working as a Full-stack developer on a web application product used in the hospitality industry.",
-      "Working on Angular 12 and translating wireframes to develop new functionalities on UI.",
-      "Backend development using Java Spring Boot to create new service endpoints along with the business logic written in Java as well as SQL packages.",
-      "Working with PO and the technical manager and getting requirements from the client.",
+      "The main responsibilities in the frontend include working on Angular 12 and translating wireframes to develop new functionalities on UI.",
+      "Also worked on backend development using Java Spring boot to create new service endpoints along with the business logic written in Java as well as SQL packages.",
+      "This generally included working with PO and the technical manager and getting requirements from the client.",
       "Trained and mentored a backend and a frontend team separately on their respective technologies."
     ],
     "projects": [
       {
         "name": "Maxxton software",
         "description": "Worked in the frontend in developing web pages and in the backend creating microservice endpoints as well as business logic.",
-        "techStack": ["Angular", "Typescript", "HTML", "Java", "Spring Boot", "Spring Data JPA", "Oracle SQL"]
+        "techStack": ["Angular", "Typescript", "HTML", "Java 8", "Spring Boot", "Spring Data JPA", "Oracle SQL"]
       }
     ]
   },
@@ -53,7 +53,7 @@
     "responsibilities": [
       "Followed through the development of a customer-facing web application till its release which was being developed to automate processes for the travel industry.",
       "Worked on the frontend development of 2 major applications which had Angular 8 and Ionic 4 as the UI frameworks respectively.",
-      "Worked on Server-side business logic and making new service endpoints in NodeJS as a backend for multiple frontend end applications along with database management."
+      "Worked on Server-side business logic and making new service endpoints in NodeJs as a backend for multiple frontend end applications along with database management."
     ],
     "projects": [
       {
@@ -64,7 +64,7 @@
       {
         "name": "Drivers in India: Backend application",
         "description": "Worked on backend services for the web and mobile apps.",
-        "techStack": ["NodeJS", "JavaScript", "PostgreSQL"]
+        "techStack": ["NodeJs", "JavaScript", "PostgreSQL", "AWS"]
       },
       {
         "name": "Drivers in India: Driver’s android application",

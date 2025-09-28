@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { DataService } from 'src/services/data-service/data.service';
 import { Tabs } from 'src/tabs';
 
 @Component({
@@ -8,8 +9,12 @@ import { Tabs } from 'src/tabs';
 })
 export class DisplayRhsComponent {
 
-  @Input()
-  selectedTab: Tabs = Tabs.e;
+  companyIndex: number = 0;
 
   tabs = Tabs;
+  dataService: DataService;
+
+  constructor(dataService: DataService) {
+    this.dataService = dataService;
+  }
 }

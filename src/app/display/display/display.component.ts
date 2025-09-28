@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Tabs } from 'src/tabs';
 import { HttpClient } from '@angular/common/http';
 
@@ -8,9 +8,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./display.component.scss']
 })
 export class DisplayComponent {
-
-  @Input()
-  selectedTab: Tabs = Tabs.e;
 
   constructor(private http: HttpClient) {
   }

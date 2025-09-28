@@ -6,9 +6,11 @@ import { DisplayLhsComponent } from './display-lhs/display-lhs.component';
 import { DisplayRhsComponent } from './display-rhs/display-rhs.component';
 import { SkillStackComponent } from './display-rhs/skill-stack/skill-stack.component';
 import { ExperienceComponent } from './display-rhs/experience/experience.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { CardComponent } from '../shared/card/card.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { ProjectComponent } from './display-rhs/project/project.component';
+import { DataService } from 'src/services/data-service/data.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { MatChipsModule } from '@angular/material/chips';
     DisplayRhsComponent,
     SkillStackComponent,
     ExperienceComponent,
-    CardComponent
+    CardComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +30,8 @@ import { MatChipsModule } from '@angular/material/chips';
   ],
   exports: [
     DisplayComponent
-  ]
+  ],
+  providers: [DataService]
+
 })
 export class DisplayModule { }

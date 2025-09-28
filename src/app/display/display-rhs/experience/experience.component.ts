@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import resumeData from 'src/assets/resume/resume_abrar.json';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { DataService } from 'src/services/data-service/data.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,7 +7,13 @@ import resumeData from 'src/assets/resume/resume_abrar.json';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  resumeData = resumeData;
+
+  resumeData;
+
+  constructor(private dataService: DataService) {
+
+    this.resumeData = dataService.resumeData;
+  }
 
   getTechStack(projects: any[]): string[] {
     const techStackSet = new Set<string>();
@@ -17,6 +23,7 @@ export class ExperienceComponent {
         techStackSet.add(tech);
       });
     });
+
     return Array.from(techStackSet);
   }
 }

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ClipboardService } from 'ngx-clipboard';
 import { ToastrService } from 'ngx-toastr';
+import { DataService } from 'src/services/data-service/data.service';
 import { Tabs } from 'src/tabs';
 
 @Component({
@@ -10,15 +11,23 @@ import { Tabs } from 'src/tabs';
 })
 export class HeaderComponent {
 
-  selectedTab: Tabs = Tabs.e;
   tabs = Tabs;
+  dataService: DataService;
 
   constructor(
     private clipboardService: ClipboardService,
-    private toastr: ToastrService) { }
+    private toastr: ToastrService,
+    dataService: DataService) {
+
+    this.dataService = dataService;
+  }
 
   refreshPage(): void {
     window.location.reload();
+  }
+
+  tabHeaderChange(tab: Tabs) {
+    this.dataService.selectedTab = tab;
   }
 
   copyEmail() {

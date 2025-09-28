@@ -1,5 +1,6 @@
 <div class="flex justify-start flex-col w-full gap-6 p-6 overflow-y-auto max-h-[90vh]">
-    <app-card *ngFor="let exp of resumeData.experience" [header]="exp.role" [footer]="'Check projects'">
+    <app-card *ngFor="let exp of resumeData.experience; let i = index" [header]="exp.role" [footer]="'Check projects'"
+        [companyIndex]="i">
 
         <div>
             <a [href]="exp.website" target="_blank" class="hover:underline text-l">

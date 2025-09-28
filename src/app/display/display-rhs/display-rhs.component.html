@@ -1,4 +1,7 @@
-<app-experience *ngIf="selectedTab == tabs.e" class="flex justify-start h-full w-full text-slate-300"></app-experience>
+<app-experience *ngIf="dataService.selectedTab == tabs.e"
+    class="flex justify-start h-full w-full text-slate-300"></app-experience>
 
-<app-skill-stack *ngIf="selectedTab == tabs.s"
+<app-skill-stack *ngIf="dataService.selectedTab == tabs.s"
     class="grid grid-cols-2 sm:grid-cols-3 h-full w-full text-slate-300"></app-skill-stack>
+
+<app-project *ngIf="dataService.selectedTab == tabs.p"></app-project>

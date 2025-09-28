@@ -5,7 +5,7 @@
   <div class="card-body text-gray-700">
     <ng-content></ng-content>
   </div>
-  <div class="card-footer mt-4 text-right" *ngIf="footer">
+  <div class="card-footer mt-4 text-right cursor-pointer" (click)="switchToProjects()" *ngIf="footer">
     {{ footer }}
   </div>
 </div>
